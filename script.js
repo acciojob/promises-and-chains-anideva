@@ -13,7 +13,7 @@ btn.addEventListener("click", function(event){
     const name= nameInput.value ;
 
     if(age=== "" || name === ""){
-        alert("Please enter valid details.");
+        alert("Please enter valid details");
         return; // this will stop here and doesnot move forward the program
     }
     const votingPromise = new Promise((resolve,reject)=> {
@@ -29,10 +29,10 @@ btn.addEventListener("click", function(event){
 
     votingPromise
     .then((name)=> {
-        alert("Welcome," + name + ". You can vote. ");
+        alert("Welcome, " + name + ". You can vote.");
 
     })
     .catch((name)=>{
-        alert("Oh sorry " + name + ". You aren't old enough. ");
+        alert("Oh sorry " + name + ". You aren't old enough.");
     });
 });
